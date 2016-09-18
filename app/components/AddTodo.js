@@ -24,11 +24,6 @@ class AddTodo extends Component {
   }
 
 	render() {
-		// const {
-			// onChange,
-			// add,
-      // add2 
-		// } = this.props;
     const {
       test
     } = this.state;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import App2 from './App2';
-
 import TodoList from './TodoList';
 import AddTodo from './AddTodo';
 //APP
@@ -14,16 +13,8 @@ class App extends Component {
     this.state = {
       todos: ['apple', 'banana'],
       extraText: 'text goes here'
-      // rawInput: ''
     };
   }
-  // onChange(e){
-  //    //e.target.value
-  //    this.setState(
-  //    {
-  //      rawInput: e.target.value
-  //    })
-  //  }
 
   updateExtraField(newText) {
     this.setState({
@@ -36,19 +27,7 @@ class App extends Component {
       todos: this.state.todos.concat(item)
     });
   }
-   // add(){
-   //   const todos = this.state.todos;
-   //    todos.push(this.state.rawInput);
 
-   //   this.setState({
-   //     //todos: this.state.todos.concat(this.state.rawInput),
-   //     todos,
-   //     rawInput: ''
-   //   })
-   // }
-
-  // onChange={this.onChange.bind(this)}
-  // add={this.add.bind(this)} value={rawInput}
   render() {
     const {
       todos,

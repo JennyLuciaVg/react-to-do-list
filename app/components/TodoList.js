@@ -16,7 +16,7 @@ class TodoList extends Component {
         {
           todos.map((item, i) =>
             <TodoItem
-              gg={item}
+              element={item}
               key ={i}/>
           )
         }

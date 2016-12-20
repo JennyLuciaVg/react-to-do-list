@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-//input y tiene un boton, y cuando le das click boton
-//te envia el valor del input
+//input más un boton, cuando se le da click al boton
+//envia el valor del input al ToDoList
 class AddTodo extends Component {
 	constructor(props) {
 		super(props);

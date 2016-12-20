@@ -7,11 +7,11 @@ class TodoItem extends Component {
 
   render() {
     const {
-      gg,
+      element,
     } = this.props;
 
     return (
-        <li>{gg}</li>
+        <li>{element}</li>
     );
   }
 }

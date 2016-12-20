@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import App2 from './App2';
 import TodoList from './TodoList';
 import AddTodo from './AddTodo';
+import ListCourses from './ListCourses';
 //APP
   // addTodo C
   // TODOLIST C
@@ -12,7 +13,8 @@ class App extends Component {
     super(props);
     this.state = {
       todos: ['apple', 'banana'],
-      extraText: 'text goes here'
+      extraText: 'text goes here',
+      newList: ['calculo','mate1','ingles']
     };
   }
 
@@ -32,7 +34,8 @@ class App extends Component {
     const {
       todos,
       rawInput,
-      extraText
+      extraText,
+      newList
     } = this.state;
 
     return (
@@ -44,7 +47,10 @@ class App extends Component {
         />
         <h2>{extraText}</h2>
         <AddTodo add2={this.updateExtraField.bind(this)} />
+        <h3>A new list</h3>
+        <ListCourses newList={newList} />
         </div>
+
     );
   }
 }

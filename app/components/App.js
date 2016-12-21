@@ -3,17 +3,18 @@ import App2 from './App2';
 import TodoList from './TodoList';
 import AddTodo from './AddTodo';
 import ListCourses from './ListCourses';
+import Calculator from './Calculator';
 //APP
   // addTodo C
   // TODOLIST C
-    //TODO ITEM C
+    //TODOITEM C
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       todos: ['apple', 'banana'],
-      extraText: 'text goes here',
+      extraText: ' new text goes here',
       newList: ['calculo','mate1','ingles']
     };
   }
@@ -50,7 +51,8 @@ class App extends Component {
         <h3>A new list</h3>
         <ListCourses newList={newList} />
         </div>
-
+        <h2>Calculator</h2>
+        <Calculator />
     );
   }
 }
